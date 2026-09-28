@@ -3,29 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Ulang Tahun!</title>
+    <title>Portofolio saya/title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <div class="glow"></div>
-        <h1 class="title">Happy Birthday! 🎉</h1>
-        <p class="subtitle">Hari ini adalah hari istimewamu.</p>
-        
-        <button id="openBtn" onclick="revealMessage()">Buka Kejutan ✨</button>
 
-        <div id="message" class="hidden-message">
-            <p>Semoga di usia yang baru ini, setiap langkahmu dipermudah, selalu diberi kesehatan, kebahagiaan, dan keberhasilan dalam setiap hal yang kamu usahakan!</p>
-            <p class="wish"> Tetap jadi orang yang luar biasa! </p>
+    <!-- Header / Menu Navigasi -->
+    <header>
+        <div class="logo">Portofolio</div>
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Utama / Hero Section -->
+    <section class="hero">
+        <h1>Halo, Saya <span>Faris</span> 👋</h1>
+        <p>Saya seorang Web Developer yang suka membuat tampilan web menarik dan fungsional.</p>
+        <a href="#proyek" class="btn">Lihat Karya Saya</a>
+    </section>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="tentang" class="section">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah pengembang web pemula yang sedang belajar teknologi web modern seperti HTML, CSS, JavaScript, dan Git/GitHub. Saya selalu bersemangat untuk mempelajari hal-hal baru di dunia pemrograman.</p>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="proyek" class="section bg-light">
+        <h2>Proyek Saya</h2>
+        <div class="card-container">
+            <!-- Kartu Proyek 1 -->
+            <div class="card">
+                <h3>Website Portofolio</h3>
+                <p>Proyek pembuatan portofolio pribadi menggunakan HTML dan CSS yang terintegrasi dengan GitHub.</p>
+            </div>
+            <!-- Kartu Proyek 2 -->
+            <div class="card">
+                <h3>Undangan Digital</h3>
+                <p>Website interaktif ucapan dan undangan interaktif dengan tampilan modern.</p>
+            </div>
         </div>
-        <!-- Tambahkan baris ini di dalam tag <body> -->
-            
+    </section>
 
-<audio id="bgMusic" loop>
-    <source src="musik.mp3" type="audio/mpeg">
-</audio>
-    </div>
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="section">
+        <h2>Hubungi Saya</h2>
+        <p>Ingin bekerja sama atau sekadar menyapa? Silakan hubungi saya melalui:</p>
+        <div class="kontak-links">
+            <a href="https://github.com/farisrahmangantenk04" target="_blank" class="btn-outline">GitHub Saya</a>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Faris. Dibuat dengan semangat.</p>
+    </footer>
+
 </body>
 </html>
